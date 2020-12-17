@@ -26,8 +26,6 @@ while 1:
         if event.type == pygame.QUIT: sys.exit()
 
     screen.fill(black)
-    #pygame.gfxdraw.pixel(screen, int(posX), int(posY), colour)
-    #pygame.gfxdraw.pixel(screen, int(pos2X), int(pos2Y), colour2)
 
     pygame.gfxdraw.line(screen, int(posX), int(posY), int(pos2X), int(pos2Y),
                         colour)
@@ -40,11 +38,5 @@ while 1:
 
     incX += speed[0]
     incY += speed[1]
-
-    #if posX < 0 or posX > width:
-    #    posX = width / 2
-
-    #if posY < 0 or posY > height:
-    #    posY = height / 2
 
     pygame.display.flip()
